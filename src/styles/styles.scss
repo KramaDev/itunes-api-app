@@ -1,0 +1,52 @@
+@keyframes backgroundAnimation {
+  0% {
+    background-color: var(--color-bgUI1);
+  }
+  25% {
+    background-color: var(--color-bgUI2);
+  }
+  50% {
+    background-color: var(--color-bgUI3);
+  }
+  75% {
+    background-color: var(--color-bgUI4);
+  }
+  100% {
+    background-color: var(--color-bgUI5);
+  }
+}
+
+:root {
+  //COLORS
+  --color-black: #222;
+  --color-white: #fff;
+
+  --color-bgUI1: #3d3b4f;
+  --color-bgUI2: #4c4b63;
+  --color-bgUI3: #43425d;
+  --color-bgUI4: #574b70;
+  --color-bgUI5: #36313d;
+  --color-bgUI6: #595775;
+  --color-bgUI7: #605f72;
+
+  //BORDERS
+  --border-round: 0.5rem;
+  --border-circle: 1600rem;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  animation: backgroundAnimation 20s infinite forwards;
+  transition: background-color 500ms ease-in-out;
+}
+
+//IMPORTS
+//COMPONENTS SORTED A-Z
+@import "./components/card.scss";
+@import "./components/grid.scss";
+@import "./components/layout.scss";

@@ -1,0 +1,87 @@
+.card {
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.4rem var(--color-black);
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+
+  @media (max-width: 64rem) {
+    padding: 0.8rem;
+  }
+
+  @media (max-width: 48rem) {
+    padding: 05rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.card header {
+  margin-bottom: 1.25rem;
+}
+
+.card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-black);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-black);
+}
+
+.card p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-black);
+}
+
+.card a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
+  gap: 1.25rem;
+
+  @media (max-width: 64rem) {
+    grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
+    gap: 0.5;
+  }
+}
+
+.album {
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, cursor 0.3s ease;
+}
+
+.album:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.album img {
+  background-color: var(--color-black);
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.album p {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,13 @@
+.layout {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+
+  @media (max-width: 64rem) {
+    padding: 0.625rem;
+  }
+
+  @media (max-width: 48rem) {
+    padding: 0.3125rem;
+  }
+}
